@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Paws & Wings Haven is a fictional prototype animal shelter website for rescued dogs, cats, rabbits, and birds in Kolkata."
+    />
+    <title>Paws &amp; Wings Haven | Animal Shelter Prototype</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="#home" aria-label="Paws and Wings Haven home">
+          <span class="brand-mark" aria-hidden="true">🐾</span>
+          <span>Paws &amp; Wings <strong>Haven</strong></span>
+        </a>
+        <!-- This navigation wraps on small screens until a mobile menu is added later. -->
+        <div class="header-actions"><button class="icon-button theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">☾</button><button class="icon-button menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation menu">☰</button></div>
+        <nav id="main-navigation" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#animals">Animals</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#adoption">Adoption</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#visit">Visit</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="button button-small header-cta adoption-trigger" type="button">Adopt Now</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero" aria-labelledby="hero-heading">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">A gentle place for new beginnings</p>
+            <h1 id="hero-heading">Every paw deserves a place to call home.</h1>
+            <p class="hero-text">
+              Paws &amp; Wings Haven gives rescued animals safety, recovery, patient
+              care, and a second chance with a loving family.
+            </p>
+            <div class="button-group">
+              <a class="button" href="#animals">Meet Our Animals <span aria-hidden="true">→</span></a>
+              <a class="button button-outline" href="#visit">Visit Our Shelter</a>
+            </div>
+            <p class="demo-note">A fictional shelter website created as a prototype demo.</p>
+          </div>
+          <div class="hero-visual">
+            <img
+              src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+              alt="A happy brown and white dog looking toward the camera"
+            />
+            <div class="hero-badge"><span aria-hidden="true">♥</span> Care. Recover. Belong.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section" aria-labelledby="about-heading">
+        <div class="container about-layout">
+          <div>
+            <p class="eyebrow">Our little haven</p>
+            <h2 id="about-heading">A soft landing for animals in need.</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              At Paws &amp; Wings Haven, every rescue is met with warm beds, steady
+              meals, medical attention, and plenty of kindness. We offer temporary
+              care while dogs, cats, rabbits, and rescued birds recover and wait for
+              the right home.
+            </p>
+            <p>
+              This fictional prototype imagines a community-led shelter where each
+              animal is seen, understood, and given time to thrive.
+            </p>
+          </div>
+        </div>
+        <div class="container stats-grid" aria-label="Fictional shelter impact statistics">
+          <article class="stat-card"><strong>120+</strong><span>animals helped</span></article>
+          <article class="stat-card"><strong>85+</strong><span>happy adoptions</span></article>
+          <article class="stat-card"><strong>40+</strong><span>kind volunteers</span></article>
+          <article class="stat-card"><strong>4</strong><span>animal friends cared for</span></article>
+        </div>
+        <p class="container statistics-note">Fictional demo statistics for this prototype website.</p>
+      </section>
+
+      <!-- Animal cards use type classes to make future filtering straightforward. -->
+      <section id="animals" class="section animals-section" aria-labelledby="animals-heading">
+        <div class="container section-heading">
+          <p class="eyebrow">Meet the residents</p>
+          <h2 id="animals-heading">Small stories. Big personalities.</h2>
+          <p>Each of these fictional friends is looking for patience, companionship, and a home of their own.</p>
+        </div>
+        <div class="container filter-controls" aria-label="Filter animals by type"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button><button class="filter-button" type="button" data-filter="dog" aria-pressed="false">Dogs</button><button class="filter-button" type="button" data-filter="cat" aria-pressed="false">Cats</button><button class="filter-button" type="button" data-filter="rabbit" aria-pressed="false">Rabbits</button><button class="filter-button" type="button" data-filter="bird" aria-pressed="false">Birds</button></div>
+        <div class="container animal-grid">
+          <article class="animal-card dog">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A smiling golden dog" loading="lazy" />
+            <div class="card-content"><p class="animal-type">Dog · 2 years</p><h3>Milo</h3><p class="personality">Sunny, social, and ready for a long morning walk.</p><p class="rescue-story">Found near a market, Milo has blossomed with gentle routine and treats.</p><a href="#contact" class="text-link">Meet Milo <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="animal-card cat">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A curious tabby cat with green eyes" loading="lazy" />
+            <div class="card-content"><p class="animal-type">Cat · 3 years</p><h3>Juniper</h3><p class="personality">Thoughtful, quiet, and a champion windowsill napper.</p><p class="rescue-story">Juniper arrived timid, but now greets familiar faces with a soft chirp.</p><a href="#contact" class="text-link">Meet Juniper <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="animal-card rabbit">
+            <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A fluffy rabbit sitting in grass" loading="lazy" />
+            <div class="card-content"><p class="animal-type">Rabbit · 1 year</p><h3>Pippin</h3><p class="personality">Gentle, curious, and happiest exploring cardboard tunnels.</p><p class="rescue-story">This little explorer is recovering well and loves a calm, patient friend.</p><a href="#contact" class="text-link">Meet Pippin <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="animal-card bird">
+            <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A colorful small bird resting on a branch" loading="lazy" />
+            <div class="card-content"><p class="animal-type">Rescued bird · Adult</p><h3>Sky</h3><p class="personality">Bright-eyed, alert, and fond of gentle morning sounds.</p><p class="rescue-story">Sky is receiving supportive care after being found with an injured wing.</p><a href="#contact" class="text-link">Meet Sky <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="animal-card dog">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A friendly small dog sitting outdoors" loading="lazy" />
+            <div class="card-content"><p class="animal-type">Dog · 4 years</p><h3>Tara</h3><p class="personality">Affectionate, steady, and full of tail wags.</p><p class="rescue-story">Tara is learning that quiet homes and soft blankets can be hers for good.</p><a href="#contact" class="text-link">Meet Tara <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="animal-card cat">
+            <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A relaxed ginger cat" loading="lazy" />
+            <div class="card-content"><p class="animal-type">Cat · 2 years</p><h3>Marble</h3><p class="personality">Playful, chatty, and very interested in shoelaces.</p><p class="rescue-story">Marble came to us alone and now keeps everyone entertained at playtime.</p><a href="#contact" class="text-link">Meet Marble <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="animal-card rabbit">
+            <img src="https://images.unsplash.com/photo-1535241749838-299277b6305f?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A brown rabbit in a grassy field" loading="lazy" />
+            <div class="card-content"><p class="animal-type">Rabbit · 2 years</p><h3>Clover</h3><p class="personality">Sweet-natured, observant, and fond of leafy greens.</p><p class="rescue-story">Clover has gained confidence in our quiet rabbit corner after a difficult start.</p><a href="#contact" class="text-link">Meet Clover <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="animal-card bird">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A small bird perched among green leaves" loading="lazy" />
+            <div class="card-content"><p class="animal-type">Rescued bird · Young adult</p><h3>Peep</h3><p class="personality">Lively, inquisitive, and quick to notice a new visitor.</p><p class="rescue-story">Peep is building strength in a peaceful recovery space after a rescue.</p><a href="#contact" class="text-link">Meet Peep <span aria-hidden="true">→</span></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section gallery-section" aria-labelledby="gallery-heading">
+        <div class="container section-heading gallery-heading">
+          <p class="eyebrow">Life at the haven</p>
+          <h2 id="gallery-heading">Little moments worth sharing.</h2>
+          <p>A glimpse into the calm, care, and companionship imagined at our shelter.</p>
+        </div>
+        <div class="container gallery-grid">
+          <figure class="gallery-item gallery-tall"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="A dog enjoying time outdoors" loading="lazy" /><figcaption>Fresh air and happy tails</figcaption></figure>
+          <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A cat looking comfortably at the camera" loading="lazy" /><figcaption>Cozy corners</figcaption></figure>
+          <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A bird perched on a branch" loading="lazy" /><figcaption>Quiet recovery</figcaption></figure>
+          <figure class="gallery-item gallery-wide"><img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="A rabbit resting among greenery" loading="lazy" /><figcaption>Gentle new beginnings</figcaption></figure>
+        </div>
+      </section>
+
+      <section id="adoption" class="section adoption-section" aria-labelledby="adoption-heading">
+        <div class="container adoption-layout">
+          <div class="adoption-copy">
+            <p class="eyebrow">Find your companion</p>
+            <h2 id="adoption-heading">A thoughtful journey toward home.</h2>
+            <p>Our fictional process is designed to help each person and animal get to know one another at a comfortable pace.</p>
+            <button class="button adoption-trigger" type="button">Start an Adoption Request <span aria-hidden="true">→</span></button>
+          </div>
+          <ol class="process-list">
+            <li><span>01</span><div><h3>Meet an animal</h3><p>Spend time with a friend who catches your heart.</p></div></li>
+            <li><span>02</span><div><h3>Learn their needs</h3><p>Talk through their personality, care, and ideal home.</p></div></li>
+            <li><span>03</span><div><h3>Share your request</h3><p>Tell us a little about the home you can offer.</p></div></li>
+            <li><span>04</span><div><h3>Begin the journey</h3><p>Take the next steps toward a kind, lasting match.</p></div></li>
+          </ol>
+        </div>
+        <form id="adoption-form" class="container adoption-form" novalidate hidden><h3>Adoption request</h3><p class="demo-note">Prototype only: this request is not sent or stored.</p><div class="form-grid"><label for="adoption-name">Your name<input id="adoption-name" name="name" required /></label><label for="adoption-email">Email address<input id="adoption-email" name="email" type="email" required /></label><label for="adoption-phone">Phone number<input id="adoption-phone" name="phone" type="tel" required /></label><label for="adoption-animal">Selected animal<select id="adoption-animal" name="animal" required><option value="">Choose an animal</option><option>Milo</option><option>Juniper</option><option>Pippin</option><option>Sky</option><option>Tara</option><option>Marble</option><option>Clover</option><option>Peep</option></select></label></div><label for="adoption-message">Tell us why you would be a good match<textarea id="adoption-message" name="message" rows="4" required></textarea></label><button class="button" type="submit">Send Demo Request</button><p id="adoption-status" class="form-status" aria-live="polite"></p></form>
+      </section>
+
+      <section id="donate" class="section donate-section" aria-labelledby="donate-heading">
+        <div class="container section-heading donate-heading">
+          <p class="eyebrow">Make care possible</p>
+          <h2 id="donate-heading">Every act of support reaches a rescue.</h2>
+          <p>Prototype donation options show the types of care supporters may choose to strengthen.</p>
+        </div>
+        <div class="container support-grid">
+          <article class="support-card"><span class="support-icon" aria-hidden="true">◒</span><h3>Support a Meal</h3><p>Help fill bowls with nourishing food and small treats.</p><a class="text-link" href="#contact">Choose meal support <span aria-hidden="true">→</span></a></article>
+          <article class="support-card featured"><span class="support-icon" aria-hidden="true">✚</span><h3>Support Medical Care</h3><p>Help imagine checkups, recovery supplies, and comfort.</p><a class="text-link" href="#contact">Choose medical care <span aria-hidden="true">→</span></a></article>
+          <article class="support-card"><span class="support-icon" aria-hidden="true">⌂</span><h3>Support Rescue Work</h3><p>Help prepare safe spaces for the next animal in need.</p><a class="text-link" href="#contact">Choose rescue work <span aria-hidden="true">→</span></a></article>
+        </div>
+        <p class="container demo-note donation-note">Demo only: these options do not collect payments or personal financial information.</p>
+      </section>
+
+      <section id="visit" class="section visit-section" aria-labelledby="visit-heading">
+        <div class="container visit-layout">
+          <div class="visit-copy">
+            <p class="eyebrow">Come say hello</p>
+            <h2 id="visit-heading">Visit the shelter.</h2>
+            <address>17-Sampriti Apartment,<br />Nangi Station Road,<br />Maheshtala,<br />West Bengal, Kolkata-700140</address>
+            <div class="hours"><h3>Sample visiting hours</h3><p>Monday–Saturday: 10:00 AM–5:00 PM<br />Sunday: By appointment</p><small>Fictional demo information; please do not rely on these hours.</small></div>
+          </div>
+          <div class="map-placeholder" role="img" aria-label="Illustrated placeholder for a future shelter location map">
+            <span class="map-pin" aria-hidden="true">●</span>
+            <span class="map-road road-one" aria-hidden="true"></span><span class="map-road road-two" aria-hidden="true"></span>
+            <p>Future map location</p><small>Map embed placeholder</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+        <div class="container contact-layout">
+          <div class="contact-copy">
+            <p class="eyebrow">We would love to hear from you</p>
+            <h2 id="contact-heading">Start a conversation.</h2>
+            <p>Ask about an animal, plan a fictional visit, or share a kind message with the team.</p>
+            <ul class="contact-details">
+              <li><span aria-hidden="true">☎</span><a href="tel:+919000000000">+91 90000 00000</a></li>
+              <li><span aria-hidden="true">✉</span><a href="mailto:hello@pawsandwings.demo">hello@pawsandwings.demo</a></li>
+            </ul>
+            <p class="demo-note">Phone and email are fictional demo contact details.</p>
+          </div>
+          <!-- This form is intentionally visual only; submission behavior comes later. -->
+          <form id="contact-form" class="contact-form" action="#" aria-label="Demo enquiry form" novalidate>
+            <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Your name" />
+            <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" />
+            <label for="message">How can we help?</label><textarea id="message" name="message" rows="4" placeholder="Tell us what is on your mind"></textarea>
+            <button class="button" type="submit">Send Enquiry <span aria-hidden="true">→</span></button>
+            <small>This is a non-submitting prototype form.</small>
+            <p id="contact-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">🐾</span><span>Paws &amp; Wings <strong>Haven</strong></span></a><p>Gentle care today. Hopeful homes tomorrow.</p></div>
+        <nav aria-label="Footer navigation"><ul class="footer-links"><li><a href="#about">About</a></li><li><a href="#animals">Animals</a></li><li><a href="#adoption">Adoption</a></li><li><a href="#donate">Donate</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+      </div>
+      <div class="container footer-bottom"><p>&copy; 2026 Paws &amp; Wings Haven.</p><p>Fictional prototype website — not a real shelter or service.</p></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
